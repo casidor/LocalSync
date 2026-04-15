@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Файловий менеджер LocalSync">
+    <meta name="keywords" content="файли, менеджер, документи">
+    <meta name="author" content="Волошин Роман Максимович">
+    <title>LocalSync - Файловий менеджер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>LocalSync</h1>
+        <p>Файловий менеджер</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="#">Сервіси ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="files.html">Файловий менеджер</a></li>
+                        <li><a href="admin.html">Налаштування</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#features">Переваги</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Ваші файли</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Назва файлу</th>
+                        <th>Розмір</th>
+                        <th>Тип</th>
+                        <th>Дата</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lab1_report.pdf</td>
+                        <td>1.2 МБ</td>
+                        <td>Документ</td>
+                        <td>15.03.2026</td>
+                    </tr>
+                    <tr>
+                        <td>vacation_photo.jpg</td>
+                        <td>4.5 МБ</td>
+                        <td>Зображення</td>
+                        <td>20.03.2026</td>
+                    </tr>
+                    <tr>
+                        <td>presentation.pptx</td>
+                        <td>8.1 МБ</td>
+                        <td>Презентація</td>
+                        <td>22.03.2026</td>
+                    </tr>
+                    <tr>
+                        <td>music.mp3</td>
+                        <td>3.7 МБ</td>
+                        <td>Аудіо</td>
+                        <td>25.03.2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <h3>Попередній перегляд відео</h3>
+            <video controls width="640" height="360">
+                <source src="assets/videos/demo.mp4" type="video/mp4">
+                <source src="assets/videos/demo.webm" type="video/webm">
+            </video>
+        </article>
+        <article>
+            <h3>Попередній перегляд аудіо</h3>
+            <audio controls>
+                <source src="assets/audio/sample.mp3" type="audio/mpeg">
+                <source src="assets/audio/sample.ogg" type="audio/ogg">
+            </audio>
+        </article>
+        <article>
+            <h3>Попередній перегляд зображення</h3>
+            <img src="assets/images/nature.jpg" alt="Природа" width="400">
+        </article>
+        <aside>
+            <h3>Категорії файлів</h3>
+            <ul>
+                <li>Документи</li>
+                <li>Зображення</li>
+                <li>Відео</li>
+                <li>Аудіо</li>
+                <li>Архіви</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LocalSync. Всі права захищені.</p>
+    </footer>
+</body>
+
+</html>

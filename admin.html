@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Налаштування сервера LocalSync">
+    <meta name="keywords" content="налаштування, адмін, конфігурація">
+    <meta name="author" content="Волошин Роман Максимович">
+    <title>LocalSync - Налаштування</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>LocalSync</h1>
+        <p>Панель налаштувань</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="#">Сервіси ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="files.html">Файловий менеджер</a></li>
+                        <li><a href="admin.html">Налаштування</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#features">Переваги</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Налаштування сервера</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Основна інформація</legend>
+                    <p>
+                        <label for="server-name">Назва сервера:</label><br>
+                        <input type="text" id="server-name" name="server-name" required minlength="3" maxlength="50"
+                            placeholder="Мій домашній сервер">
+                    </p>
+                    <p>
+                        <label for="admin-email">Email адміністратора:</label><br>
+                        <input type="email" id="admin-email" name="admin-email" required
+                            placeholder="admin@example.com">
+                    </p>
+                    <p>
+                        <label for="admin-tel">Телефон адміна:</label><br>
+                        <input type="tel" id="admin-tel" name="admin-tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="099-123-4567">
+                    </p>
+                    <p>
+                        <label for="backup-url">Резервний URL:</label><br>
+                        <input type="url" id="backup-url" name="backup-url" placeholder="https://backup.example.com">
+                    </p>
+                    <p>
+                        <label for="maintenance-time">Час обслуговування:</label><br>
+                        <input type="datetime-local" id="maintenance-time" name="maintenance-time" required>
+                    </p>
+                    <p>
+                        <label for="port">Порт сервера:</label><br>
+                        <input type="number" id="port" name="port" min="8000" max="9000" value="8080" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Налаштування безпеки</legend>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="allow-upload" checked>
+                            Дозволити завантаження файлів
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="encryption">
+                            Увімкнути шифрування
+                        </label>
+                    </p>
+
+                    <p>Тип доступу:</p>
+                    <p>
+                        <input type="radio" id="public" name="access" value="public" checked>
+                        <label for="public">Публічний</label><br>
+
+                        <input type="radio" id="private" name="access" value="private">
+                        <label for="private">Приватний</label><br>
+
+                        <input type="radio" id="password" name="access" value="password">
+                        <label for="password">З паролем</label>
+                    </p>
+
+                    <p>
+                        <label for="description">Опис сервера:</label><br>
+                        <textarea id="description" name="description" rows="4" cols="50"
+                            placeholder="Введіть опис вашого сервера..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Зберегти налаштування</button>
+                    <button type="reset">Скинути</button>
+                </p>
+            </form>
+        </section>
+
+        <aside>
+            <h3>Статус сервера</h3>
+            <p><strong>Статус:</strong> <span style="color: green;">Активний</span></p>
+            <p><strong>Підключених пристроїв:</strong> 3</p>
+            <p><strong>Вільно місця:</strong> 250 ГБ</p>
+            <hr>
+            <p><strong>IP адреса:</strong> 192.168.1.15</p>
+            <p><strong>Порт:</strong> 8080</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LocalSync. Всі права захищені.</p>
+    </footer>
+</body>
+
+</html>
