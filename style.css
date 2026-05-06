@@ -121,6 +121,7 @@ body {
 
 .main-grid__content {
     background-color: transparent;
+    min-width: 0;
 }
 
 /* Сайдбар (Aside) */
@@ -229,6 +230,17 @@ body {
 .table__row:hover {
     background-color: #e8f4f8;
     cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .table {
+        display: block;        
+        overflow-x: auto;     
+        white-space: nowrap;   
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
 }
 
 /* ФОРМИ */
