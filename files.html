@@ -5,102 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Файловий менеджер LocalSync">
-    <meta name="keywords" content="файли, менеджер, документи">
-    <meta name="author" content="Волошин Роман Максимович">
     <title>LocalSync - Файловий менеджер</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>LocalSync</h1>
-        <p>Файловий менеджер</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li class="dropdown">
-                    <a href="#">Сервіси ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="files.html">Файловий менеджер</a></li>
-                        <li><a href="admin.html">Налаштування</a></li>
+    <header class="header">
+        <h1 class="header__title">LocalSync</h1>
+        <p class="header__subtitle">Файловий менеджер</p>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+                <li class="nav__item dropdown">
+                    <a href="#" class="nav__link">Сервіси ▾</a>
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__item"><a href="files.html" class="dropdown__link">Файловий менеджер</a></li>
+                        <li class="dropdown__item"><a href="admin.html" class="dropdown__link">Налаштування</a></li>
+                        <li class="dropdown__item"><a href="devices.html" class="dropdown__link">Пристрої</a></li>
                     </ul>
                 </li>
-                <li><a href="index.html#features">Переваги</a></li>
+                <li class="nav__item"><a href="index.html#features" class="nav__link">Переваги</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Ваші файли</h2>
-            <table border="1">
+    
+    <main class="main-grid main-grid--single">
+    <div class="main-grid__content">
+        <section class="section">
+            <h2 class="section__title">Ваші файли</h2>
+            <table class="table">
                 <thead>
-                    <tr>
-                        <th>Назва файлу</th>
-                        <th>Розмір</th>
-                        <th>Тип</th>
-                        <th>Дата</th>
+                    <tr class="table__row">
+                        <th class="table__th">Назва файлу</th>
+                        <th class="table__th">Розмір</th>
+                        <th class="table__th">Тип</th>
+                        <th class="table__th">Дата</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>lab1_report.pdf</td>
-                        <td>1.2 МБ</td>
-                        <td>Документ</td>
-                        <td>15.03.2026</td>
+                    <tr class="table__row">
+                        <td class="table__td">lab1_report.pdf</td>
+                        <td class="table__td">1.2 МБ</td>
+                        <td class="table__td">Документ</td>
+                        <td class="table__td">15.03.2026</td>
                     </tr>
-                    <tr>
-                        <td>vacation_photo.jpg</td>
-                        <td>4.5 МБ</td>
-                        <td>Зображення</td>
-                        <td>20.03.2026</td>
+                    <tr class="table__row">
+                        <td class="table__td">vacation_photo.jpg</td>
+                        <td class="table__td">4.5 МБ</td>
+                        <td class="table__td">Зображення</td>
+                        <td class="table__td">20.03.2026</td>
                     </tr>
-                    <tr>
-                        <td>presentation.pptx</td>
-                        <td>8.1 МБ</td>
-                        <td>Презентація</td>
-                        <td>22.03.2026</td>
+                    <tr class="table__row">
+                        <td class="table__td">presentation.pptx</td>
+                        <td class="table__td">8.1 МБ</td>
+                        <td class="table__td">Презентація</td>
+                        <td class="table__td">22.03.2026</td>
                     </tr>
-                    <tr>
-                        <td>music.mp3</td>
-                        <td>3.7 МБ</td>
-                        <td>Аудіо</td>
-                        <td>25.03.2026</td>
+                    <tr class="table__row">
+                        <td class="table__td">music.mp3</td>
+                        <td class="table__td">3.7 МБ</td>
+                        <td class="table__td">Аудіо</td>
+                        <td class="table__td">25.03.2026</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <article>
-            <h3>Попередній перегляд відео</h3>
-            <video controls width="640" height="360">
+
+        <article class="article">
+            <h3 class="article__title">Попередній перегляд відео</h3>
+            <video controls class="media-preview">
                 <source src="assets/videos/demo.mp4" type="video/mp4">
                 <source src="assets/videos/demo.webm" type="video/webm">
             </video>
         </article>
-        <article>
-            <h3>Попередній перегляд аудіо</h3>
-            <audio controls>
+
+        <article class="article">
+            <h3 class="article__title">Попередній перегляд аудіо</h3>
+            <audio controls class="media-preview">
                 <source src="assets/audio/sample.mp3" type="audio/mpeg">
                 <source src="assets/audio/sample.ogg" type="audio/ogg">
             </audio>
         </article>
-        <article>
-            <h3>Попередній перегляд зображення</h3>
-            <img src="assets/images/nature.jpg" alt="Природа" width="400">
-        </article>
-        <aside>
-            <h3>Категорії файлів</h3>
-            <ul>
-                <li>Документи</li>
-                <li>Зображення</li>
-                <li>Відео</li>
-                <li>Аудіо</li>
-                <li>Архіви</li>
-            </ul>
-        </aside>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 LocalSync. Всі права захищені.</p>
+        <article class="article">
+            <h3 class="article__title">Попередній перегляд зображення</h3>
+            <img src="assets/images/nature.jpg" alt="Природа" class="media-preview">
+        </article>
+    </div>
+
+    <aside class="main-grid__sidebar sidebar">
+        <h3 class="sidebar__title">Категорії файлів</h3>
+        <ul class="list list--bullet">
+            <li class="list__item">Документи</li>
+            <li class="list__item">Зображення</li>
+            <li class="list__item">Відео</li>
+            <li class="list__item">Аудіо</li>
+            <li class="list__item">Архіви</li>
+        </ul>
+    </aside>
+</main>
+
+    <a href="#help" class="fixed-btn">?</a>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 LocalSync. Всі права захищені.</p>
     </footer>
 </body>
 
