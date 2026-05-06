@@ -510,6 +510,10 @@ body {
     margin: 15px 0;
 }
 
+audio.media-preview {
+    height: 54px;
+}
+
 .media-preview:hover {
     opacity: 0.8;
 }
